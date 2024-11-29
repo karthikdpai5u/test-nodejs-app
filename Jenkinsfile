@@ -1,4 +1,4 @@
-pipeline { 
+npipeline { 
   
    agent any
 
@@ -12,7 +12,7 @@ pipeline {
      
      stage('Test') { 
         steps { 
-           sh 'echo "testing application..."'
+           sh 'npm --version"'
         }
       }
 
