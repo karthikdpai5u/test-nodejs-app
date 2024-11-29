@@ -3,12 +3,14 @@ pipeline {
   stages {
     stage('Install Dependencies') {
       steps {
-        sh 'sudo apt install npm -y'
+        //sh 'sudo apt install npm -y'
+        ech 'Install Dependencies'
       }
     }
     stage('Test') {
       steps {
-        sh 'npm --version"'
+        //sh 'npm --version"'
+        echo 'Test Dependencies'
       }
     }
     stage("Deploy application") {
